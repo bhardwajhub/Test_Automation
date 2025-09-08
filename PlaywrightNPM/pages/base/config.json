@@ -1,0 +1,8 @@
+{
+  "baseURL": "https://s-app.mocingbird.com/users/sign_in",
+  "DOusername": "hunt",
+  "DOpassword": "mind@123",
+  "PAusername": "ronaldo",
+  "PApassword": "mind@123",
+  "env": "qa"
+}
