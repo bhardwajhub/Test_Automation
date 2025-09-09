@@ -1,30 +1,33 @@
 # Test_Automation Framework Structure
 
-├── pages/                     # Page Object Model classes
-│   ├── A/                     # Module A pages
-│   │   └── APage.js
-│   ├── B/                     # Module B pages
-│   │   └── BPage.js
-│   ├── C/                     # Module C pages
-│   │   └── CPage.js
-│   ├── base/                  # Base page class
-│   └── commonfunctions/       # Reusable utility methods
-│
-├── tests/                     # Test cases
-│   ├── Atest/                 # Tests for Module A
-│   │   └── APage.spec.js
-│   ├── Btest/                 # Tests for Module B
-│   │   └── BPage.spec.js
-│   ├── Ctest/                 # Tests for Module C
-│   │   └── CPage.spec.js
-│   └── runner.spec.js         # Runner file to trigger multiple test suites
-│
-├── .github/
-│   └── workflows/
-│       └── main.yml           # GitHub Actions CI workflow
-│
-├── package.json
-└── README.md
+## 📂 Project Structure
+
+```bash
+📂 pages/                        # Page Object Model classes
+├── 📂 A/                        
+│   └── 📄 APage.js
+├── 📂 B/                        
+│   └── 📄 BPage.js
+├── 📂 C/                        
+│   └── 📄 CPage.js
+├── 📂 base/                     # Base page class
+└── 📂 commonfunctions/          # Reusable utility methods
+
+📂 tests/                        # Test cases
+├── 📂 Atest/                    
+│   └── 📄 APage.spec.js
+├── 📂 Btest/                    
+│   └── 📄 BPage.spec.js
+├── 📂 Ctest/                    
+│   └── 📄 CPage.spec.js
+└── 📄 runner.spec.js            # Runner file to trigger multiple test suites
+
+📂 .github/
+└── 📂 workflows/
+    └── 📄 main.yml              # GitHub Actions CI workflow
+
+📄 package.json
+📄 README.md
 
 🚀 Features :
 
