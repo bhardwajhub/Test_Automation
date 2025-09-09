@@ -1,4 +1,4 @@
-# Test_Automation Framework Structure
+# Playwright Framework Structure
 
 ## 📂 Project Structure
 
