@@ -1,10 +1,13 @@
 class Base {
+
+   static env = "staging";
+
   constructor(page) {
     this.page = page;
-    this.env = process.env.ENV || "qa"; // default env = qa
   }
 
-  async goto(url) {
+  async goto() {
+    const url = require("./configreader").getBaseURL(Base.env);
     await this.page.goto(url);
   }
 

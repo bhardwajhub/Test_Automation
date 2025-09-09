@@ -1,8 +1,8 @@
 {
-  "baseURL": "https://s-app.mocingbird.com/users/sign_in",
-  "DOusername": "hunt",
-  "DOpassword": "mind@123",
-  "PAusername": "ronaldo",
-  "PApassword": "mind@123",
-  "env": "qa"
+  "staging.baseURL": "https://s-app.mocingbird.com/users/sign_in",
+  "staging.DOusername": "hunt",
+  "staging.DOpassword": "mind@123",
+  "staging.PAusername": "ronaldo",
+  "staging.PApassword": "mind@123"
+  
 }

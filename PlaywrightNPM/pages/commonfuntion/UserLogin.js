@@ -1,4 +1,5 @@
 const ConfigReader = require("../base/configreader");
+const Base = require("../base/Baseclass");
 const Locator = require("../commonfuntion/locator");
 const { expect } = require('@playwright/test');
 
@@ -6,6 +7,7 @@ class UserLogin {
   constructor(page) {
     this.page = page;
     this.locator = new Locator(page);
+    this.Base = new Base(page);
   }
 
   get usernameField() {
@@ -21,8 +23,8 @@ class UserLogin {
   }
 
   async DOlogin() {
-    const username = ConfigReader.getDoUsername();
-    const password = ConfigReader.getDoPassword();
+    const username = ConfigReader.getDoUsername(Base.env);   
+    const password = ConfigReader.getDoPassword(Base.env);  
 
     await this.usernameField.fill(username);
     console.log("✅ DOUsername entered!");
@@ -33,8 +35,8 @@ class UserLogin {
   }
 
   async PAlogin() {
-    const username = ConfigReader.getPaUsername();
-    const password = ConfigReader.getPaPassword();
+    const username = ConfigReader.getPaUsername(Base.env);   
+    const password = ConfigReader.getPaPassword(Base.env);  
     
     await this.usernameField.fill(username);
     console.log("✅ PAUsername entered!");

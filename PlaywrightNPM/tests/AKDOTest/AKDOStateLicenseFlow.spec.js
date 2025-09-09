@@ -1,8 +1,7 @@
 const { test, expect } = require("@playwright/test");
-// Ensure the path is correct and the file exists
 const FirstPage = require("../../pages/AK_MD/FirstPage");
 
-test("License Flow test with design pattern", async ({ page }) => {
+test("AK DO state License Flow Check", async ({ page }) => {
   const firstPage = new FirstPage(page);
 
   await firstPage.InitialSetup();

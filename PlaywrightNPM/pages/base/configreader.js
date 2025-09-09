@@ -8,24 +8,29 @@ class ConfigReader {
     return JSON.parse(rawData);
   }
 
-  static getDoUsername() {
-    return this.getConfig().DOusername;
+  static getValue(env, key) {
+    const config = this.getConfig();
+    return config[`${env}.${key}`]; 
   }
 
-  static getDoPassword() {
-    return this.getConfig().DOpassword;
+  static getBaseURL(env) {
+    return this.getValue(env, "baseURL");
   }
 
-  static getPaUsername() {
-    return this.getConfig().PAusername;
+  static getDoUsername(env) {
+    return this.getValue(env, "DOusername");
   }
 
-  static getPaPassword() {
-    return this.getConfig().PApassword;
+  static getDoPassword(env) {
+    return this.getValue(env, "DOpassword");
   }
 
-  static getBaseURL() {
-    return this.getConfig().baseURL;
+  static getPaUsername(env) {
+    return this.getValue(env, "PAusername");
+  }
+
+  static getPaPassword(env) {
+    return this.getValue(env, "PApassword");
   }
 }
 

@@ -12,8 +12,7 @@ class AKPAStateLicense extends Base {
     }
 
     async InitialSetup() {
-        const url = ConfigReader.getBaseURL();
-        await this.goto(url);
+        await this.goto();
         await this.userLogin.PAlogin();
     }
 
