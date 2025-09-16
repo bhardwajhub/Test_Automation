@@ -21,11 +21,20 @@ class locator {
     this.licenseTypeInput = page.getByRole('textbox', { name: 'Enter the license type' });
     this.initialDateInput = page.locator('#initial_date');
     this.Unknownradiooption = page.locator('#radio20');
+    this.Nooption = page.locator('#radio10');
     this.saveButton = page.getByRole('button', { name: 'Save' });
 
     // Dashboard tasks
     this.viewDetailsButton = page.getByRole('button', { name: 'search View Details' });
     this.tasktitle = page.locator('div.task-title.pb-1');
+
+    // C2C Flow 
+    this.Expiredatevalue = page.locator('//*[@id="main-content-container"]/app-task-details/div[1]/div/div[2]/div/div/div[2]/div[3]/div[4]/div[2]');
+    this.Leadtaskstatus = page.locator('//button[text()=" Attest as Renewed "]'); 
+    this.AcceptContinueButton = page.locator('//button[text()="Accept & Continue"]');
+    this.SaveContinueButton = page.locator('//button[text()=" Save & Continue "]');
+
+
 
     // Delete license
     this.stateLicenseEntry = page.getByRole('row', { name: 'State License License Number' }).locator('span');
